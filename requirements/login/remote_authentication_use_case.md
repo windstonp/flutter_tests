@@ -5,7 +5,7 @@
 4. Sistema entrega os dados da conta para o usuario
 
 > ## Excecao - URL Invalida
-1.Sistema retorna mensagem de erro inesperado
+1. ✅ Sistema retorna mensagem de erro inesperado
 
 > ## Excecao - dados invalidos
 1. ✅ Sistema retorna mensagem de erro inesperado
