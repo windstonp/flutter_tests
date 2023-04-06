@@ -4,6 +4,7 @@ import 'package:mockito/mockito.dart';
 import 'package:faker/faker.dart';
 
 import 'package:fordev/domain/useCases/usecases.dart';
+import 'package:fordev/domain/helpers/helpers.dart';
 
 import 'package:fordev/data/http/http.dart';
 import 'package:fordev/data/useCases/usecases.dart';
@@ -30,5 +31,18 @@ void main() {
         url: url,
         method: "post",
         body: {"email": params.email, "password": params.secret}));
+  });
+  test("Should throw unexpected error if httpClient return 400", () async {
+    final params = AuthenticationParams(
+        email: faker.internet.email(), secret: faker.internet.password());
+    when(httpClient.request(
+            url: url,
+            method: "post",
+            body: {"email": params.email, "password": params.secret}))
+        .thenThrow(HttpError.badRequest);
+
+    final future = sut.auth(params);
+
+    expect(future, throwsA(DomainError.unexpected));
   });
 }
