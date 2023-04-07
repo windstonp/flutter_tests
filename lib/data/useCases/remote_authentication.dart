@@ -1,7 +1,7 @@
 import '../../data/models/models.dart';
 
 import '../../domain/useCases/authentication.dart';
-import 'package:fordev/domain/entities/entities.dart';
+import '../../domain/entities/entities.dart';
 import '../../domain/helpers/helpers.dart';
 
 import '../http/http.dart';

@@ -11,7 +11,7 @@
 1. ✅ Sistema retorna mensagem de erro inesperado
 
 > ## Excecao - resposta invalida
-1. Sistema retorna mensagem de erro inesperado
+1. ✅ Sistema retorna mensagem de erro inesperado
 
 > ## Excecao - falha no servidor
 1. ✅ Sistema retorna mensagem de erro inesperado
