@@ -81,5 +81,13 @@ void main() {
 
       expect(response, null);
     });
+
+    test("Should return null if request with status 204 with no data",
+        () async {
+      mockResponse(204, body: '');
+      final response = await sut.request(url: url, method: "post");
+
+      expect(response, null);
+    });
   });
 }
