@@ -9,16 +9,16 @@
 
 > ## Erros
 ✅ 400 Bad Request.
-401 Not Authorized.
-403 Forbiden.
-404 not found.
-500 Internal server error.
+✅ 401 Not Authorized.
+✅ 403 Forbiden.
+✅ 404 not found.
+✅ 500 Internal server error.
 
 ## EXCECAO status code diferente dos citados acima.
-1. 500 Internal server error.
+1. ✅ 500 Internal server error.
 
 ## EXCECAO http request com alguma excecao
-1. 500 Internal server error.
+1. ✅ 500 Internal server error.
 
 ## EXCECAO verbo http invalido
-1. 500 Internal server error.
+1. ✅ 500 Internal server error.
