@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:faker/faker.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:http/http.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:mockito/mockito.dart';
 
 import 'package:fordev/data/http/http.dart';
