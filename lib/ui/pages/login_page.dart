@@ -26,12 +26,12 @@ class LoginPage extends StatelessWidget {
                     padding: const EdgeInsets.only(top: 8, bottom: 32),
                     child: TextFormField(
                       decoration: const InputDecoration(
-                          labelText: "senha", icon: Icon(Icons.lock)),
+                          labelText: "password", icon: Icon(Icons.lock)),
                       obscureText: true,
                     ),
                   ),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: null,
                     child: Text("Entrar".toUpperCase()),
                   ),
                   TextButton.icon(

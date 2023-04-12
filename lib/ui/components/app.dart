@@ -50,6 +50,9 @@ class App extends StatelessWidget {
                   backgroundColor: primaryColor,
                   surfaceTintColor: primaryColorLight,
                   textStyle: Theme.of(context).textTheme.bodyMedium)),
+          textButtonTheme: TextButtonThemeData(
+              style: ButtonStyle(
+                  foregroundColor: MaterialStateProperty.all(Colors.black87))),
           colorScheme:
               ColorScheme.fromSwatch().copyWith(secondary: primaryColor)),
       home: const LoginPage(),
